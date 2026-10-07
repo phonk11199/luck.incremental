@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>幸运增量</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="version">当前版本:v0.17</div>
+
+    <div id="guide">达到符文[7]</div>
+
+    <div class="buttons">
+        <button id="backToLuck">幸运界面</button>
+        <button id="openclover" class="hidden">四叶草</button>
+        <button id="opencondense" class="hidden">压缩</button>
+        <button id="settingsBtn">设置</button>
+    </div>
+
+
+    <div id="luckinterface"> 
+        <div>
+            <button id="currentclover">获取<span id="getclover">0</span>四叶草，需要符文[7]</button>
+            当前四叶草数量：<span id="clover">0</span>
+        </div>
+        <div>幸运：<span id="luck">1</span></div>
+        <div>当前符文: [<span id="currentRune">0</span>]</div>
+        <div>下一个符文概率:1/<span id="runeChance">1</span></div>
+        <div>当前抽奖次数: <span id="currentDraws">0</span></div>
+        <div>rps:<span id="rps">1</span>/s</div>
+        <div>当前金钱:<span id="currentMoney">0</span></div>
+        <div id="moneyluck1">
+        <button id="moneyluck">增加<span id="getluck">0</span>幸运值（需要<span id="moneyCost">10</span>金钱）</button>
+        等级：<span id="moneylucklevel">0</span>
+        </div>
+        <div id="moneytime1">
+            <button id="moneytime"><span id="moneytimemax">缩短抽奖时间（需要<span id="moneyTimeCost">20</span>金钱）</span></button>
+            等级：<span id="moneytimelevel">0</span>
+        </div>
+        <div id="morerune" class="hidden">
+            <button id="morerunebutton">符文抽取+1（需要<span id="morerunecost">50</span>金钱）</button>
+            等级：<span id="morerunelevel">0</span>
+        </div>
+        
+    </div>
+
+    <div id="cloverinterface" class="hidden">
+        
+        <div>当前四叶草数量：<span id="clover1">0</span></div>
+        <div>
+            <button id="x2luck">x2幸运(消耗<span id="x2luckCost">1</span>四叶草)</button>
+            等级：<span id="x2lucklevel">1</span>
+        </div>
+        <div id="moreinterface">
+            <div id="morecloverinterface" class="hidden">
+                <h6 id="moreclovertext">按下后，你的运气是原来的1/10，但是退出后，你可以根据你在其中获得的符文来获得更多的四叶草</h6>
+                <button id="moreclover">更多的四叶草</button>
+                <div id="colveraddtext1">
+                    当前四叶草加成：<span id="cloveraddtext">1</span>x
+                </div>
+            </div>
+            <div id="moremoneyinterface" class="hidden">
+                <h6 id="moremoneytext">按下后，你将不能获得四叶草，但是退出后，你可以根据你在其中获得的金钱来获得更多的金钱</h6>
+                <button id="moremoneybutton">更多的金钱</button>
+                <div id="moneyaddtext1">
+                    当前金钱加成：<span id="moneyaddtext">1</span>x
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="condenseinterface" class="hidden">
+        <div id="luckcondense">
+            <button id="luckcondensebutton">压缩幸运</button>
+            <div id="luckcondensetext">已压缩<span id="condenseluck">0</span>幸运</div>
+            <div id="luckcondenseaddtext">当前幸运加成：<span id="condenseluckadd">1</span>x</div>
+        </div>
+        <div id="moneycondense" class="hidden">
+            <button id="moneycondensebutton">压缩金钱</button>
+            <div id="moneycondensetext">已压缩<span id="condensemoney">0</span>金钱</div>
+            <div id="moneycondenseaddtext">当前金钱加成：<span id="condensemoneyadd">1</span>x</div>
+        </div>
+        <div id="clovercondense" class="hidden">
+            <button id="clovercondense">压缩四叶草</button>
+            <div id="clovercondensetext">已压缩<span id="condenseclover">0</span>四叶草</div>
+            <div id="clovercondenseaddtext">当前四叶草加成：<span id="condensecloveradd">1</span>x</div>
+        </div>
+    </div>
+
+    <div id="settingsinterface" class="hidden">
+        <h2>设置</h2>
+        <button id="resetBtn">重置存档</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/break_infinity.js@2"></script>
+    <script src="js/index.js"></script>
+    <script src="js/save.js"></script>
+    <script src="js/luck.js"></script>
+    <script src="js/clover.js"></script>
+    <script src="js/condense.js"></script>
+    <script src="js/settings.js"></script>
+</body>
+</html>
