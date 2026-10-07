@@ -15,7 +15,7 @@ let game = {
     moneytimecost: D(20),
     moneylucklevel: 0,
     moneytimelevel: 0,
-    clover: D(9999),
+    clover: D(0),
     x2luck1: D(1),
     x2luckcost: D(1),
     x2lucklevel: 1,
